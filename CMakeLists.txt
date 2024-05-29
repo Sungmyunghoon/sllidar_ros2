@@ -35,7 +35,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
-
+find_package(OpenCV REQUIRED)
 ################################################################################
 # Build
 ################################################################################
@@ -58,6 +58,7 @@ ament_target_dependencies(sllidar_client
   rclcpp
   std_srvs
   sensor_msgs
+  OpenCV
 )
 ################################################################################
 # Install
